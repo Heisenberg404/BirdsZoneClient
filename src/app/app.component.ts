@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  viewFormAdd = false;
+
+
+  showFormAdd() {
+    this.viewFormAdd = true;
+  }
+
+  hideAddForm() {
+    this.viewFormAdd = false;
+  }
 }

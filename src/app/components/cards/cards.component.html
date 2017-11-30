@@ -1,0 +1,27 @@
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">search</i>
+        <input id="icon_prefix" [(ngModel)]="filter" (keyup)="filterList($event)" type="text" class="validate" name="txtFilter">
+        <label for="icon_prefix">Filter by</label>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row myRow">
+    <div *ngFor="let hero of heroes" class="col s3 m3 myCard">
+      <div class="card">
+        <div class="card-image">
+          <img src="../../../assets/img/maverLogo.jpeg" height="300" width="300">
+          <span class="card-title">{{hero._name}}</span>
+        </div>
+        <div class="card-content">
+          <p>{{hero._description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{hero._link}}">More info ...</a>
+        </div>
+      </div>
+    </div>
+</div>
