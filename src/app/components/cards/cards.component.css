@@ -1,3 +1,8 @@
 .myCard {
   margin-top: 2%;
+  max-height: 500px;
+}
+.card .card-content {
+  height: 100px;
+  overflow: auto;
 }
